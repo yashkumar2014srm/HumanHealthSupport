@@ -1,0 +1,6 @@
+<html>
+<?php
+extract($_POST);
+conn=new mysqli('localhost','root','','loginhhs')
+$query="select uname,psw from register where username=uname && password=psw";
+<form action="first.html" method=POST>

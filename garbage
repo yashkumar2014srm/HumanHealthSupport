@@ -1,0 +1,5 @@
+<h1><font face="Times New Roman" size=30 color="#6e8450">Horizon<sup style="color:white" font-size=15px>&reg;</sup> Health Support</font></h1> 
+<h2 class="indent"><font face="Times New Roman" color="#6e8450">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSay Bye to Bad Health...</h2>
+
+
+value=<?php echo Cookie_val(2); ?>

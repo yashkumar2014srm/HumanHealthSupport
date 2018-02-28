@@ -1,0 +1,68 @@
+
+
+<?php
+
+session_start();
+
+$conn=new mysqli('localhost','root','','hhsdb');
+
+if ($conn->connect_error) {
+    die("Connection failed: ".$conn->connect_error);
+} 
+
+
+$user=$_POST['username'];
+$pass=$_POST['password'];
+$_SESSION["username"]=$user;
+$_SESSION["password"]=$pass;
+
+echo "session variables are set";              
+
+
+
+
+
+$sql=" SELECT * FROM register WHERE username='$user' and password='$pass'";
+echo "$sql";
+
+/*if ($result==false)
+{
+  die("Connection failed: ".$conn->connect_error);  
+}
+*/
+$result=mysqli_query($conn,$sql);
+$count=mysqli_num_rows($result);
+echo"$count";
+
+if($count==1){
+	header("location:file_upload.html");
+	
+	
+}
+
+else {
+	echo "<h2>Login Failed!!!</h2>";
+	header("location:getinvolved.php");
+	
+}
+
+
+
+if (isset($_POST['remuser'])){
+		setcookie("username",$user,time()+60*60*24);
+		setcookie("password",$pass,time()+60*60*24);
+	}
+	else
+	{
+		setcookie("username","",time()-5);
+		setcookie("password","",time()-5);
+	}
+	
+
+
+
+
+?>
+
+
+

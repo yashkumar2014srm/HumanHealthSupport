@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>
+Get Involved
+</title>
+</head>
+<body>
+<font size=5>
+<form  method="POST" action="signin.php">
+<B><p style="color:#6e8450">  Username:
+<input type="text" name="username"></p>
+<p style="color:#6e8450">  Password:
+<input type="password" name="password"></p>
+<p style="font-size:12px">
+<!--<input type="submit"  class="button" value=SignIn></p>-->
+<input type="submit" class="button" value=SignIn>
+</form>
+
+
+<form method="POST" action="reg.html">
+<input type="submit" class="button" value=SignUp>
+</form>
+</center>
+</font>
+</body>
+</html>

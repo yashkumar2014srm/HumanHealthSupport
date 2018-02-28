@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+image upload
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+    background-image: url(kl.jpg);
+	background-size:100%;
+	
+    
+}
+
+html
+
+{
+overflow-x:hidden;
+overflow-y:hidden;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color:#333;
+	
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+	font-weight=bold;
+
+}
+
+
+li a:hover {
+    background-color:#111;
+	
+}
+
+
+.active {
+    background-color: #4CAF50;
+	
+}
+
+
+
+
+.button {
+    background-color: #4CAF50;
+	
+    border:none;
+    color: white;
+    
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 16px;
+    
+    cursor: pointer;
+	padding-top:10px;
+    padding-bottom:16px;
+	border-radius:15px;
+	
+}
+.button1 {
+    background-color: #4CAF50;
+	
+    border:none;
+    color: white;
+    
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 16px;
+    
+    cursor: pointer;
+	padding-top:10px;
+    padding-bottom:16px;
+	
+	
+}
+</style>
+
+</head>
+
+<body>
+<nav>
+<ul>
+  
+  <li style="float:right"><a href="hhp.html">Home</a></li>
+  <li style="float:right"><a class="active"href="file_upload.html">Guest Login</a></li>
+</ul>
+</nav>
+
+
+<Script language="JavaScript">
+window.alert("login successfull");
+</Script>
+
+
+
+
+
+
+<center>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    
+<b><h3 style=color:white>Select image to upload:</h3><br>
+<br>
+
+<input type="file" class=button1 name="fileToUpload" id="fileToUpload"><br>
+
+<br>
+
+<input type="submit" class=button value="Upload Image" name="submit">
+
+</form>
+</center>
+</body>
+</html>
